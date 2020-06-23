@@ -1,25 +1,31 @@
 .page-scils .list {
   @extend %list;
-  display: flex;
+  // display: flex;
 }
 
 .page-scils .item {
-  position: relative;
-  width: calc((100% - 2 * 30px) / 3);
-
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
+  position: relative;
+  // width: calc((100% - 2 * 30px) / 3);
+
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 }
 
 .page-scils .photo {
-  height: 294px;
+  width: 100%;
+
   border-radius: 4px;
 }
 
 .page-scils .title {
   @extend %title;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.17;
 }
 
 .page-scils .description {
