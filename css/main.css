@@ -536,7 +536,7 @@ img {
   position: relative;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767) {
+@media screen and (max-width: 767px) {
   .page-scils .item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -641,7 +641,7 @@ img {
   padding-bottom: 24px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .team-list > .item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -767,7 +767,7 @@ img {
           justify-content: center;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .page-clients .item {
     width: calc((100% - 2 * 30px) / 2);
     margin-right: 30px;
