@@ -1,16 +1,25 @@
 .page-team {
-  // width: 100%;
   background-color: #f5f4fa;
 }
 .page-team .list {
   @extend %list;
-  // display: flex;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 .page-team .photo {
   margin-bottom: 30px;
   width: 100%;
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
+  @media screen and (min-width: $tablet) {
+    max-height: 260px;
+  }
 }
 
 .page-team .title {
@@ -26,16 +35,30 @@
 
   border-radius: 4px;
   padding-bottom: 24px;
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (min-width: $mobile) and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 3 * 30px) / 4);
+    margin-right: 30px;
 
-  // width: calc((100% - 3 * 30px) / 4);
-  // margin-right: 30px;
-
-  // &:nth-child(4n) {
-  //   margin-right: 0;
-  // }
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
 }
 
 .page-team .name {
@@ -47,6 +70,9 @@
   letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 10px;
+  @media screen and (min-width: $tablet) {
+    line-height: 1.18;
+  }
 }
 
 .page-team .tech-scill {
@@ -60,6 +86,9 @@
   font-weight: 400;
   margin-bottom: 16px;
   margin-top: 0px;
+  @media screen and (min-width: $tablet) {
+    line-height: 1.18;
+  }
 }
 
 .page-team .soc-link {

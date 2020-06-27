@@ -2,14 +2,17 @@
   background-color: #2f303a;
 }
 .container-adress {
-  // display: flex;
-  justify-content: space-between;
   align-items: baseline;
   padding-top: 48px;
   padding-bottom: 28px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /* оформляет адрес*/

@@ -1,24 +1,37 @@
 .page-scils .list {
   @extend %list;
-  // display: flex;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
 }
 
 .page-scils .item {
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
   position: relative;
-  // width: calc((100% - 2 * 30px) / 3);
+  @media screen and (min-width: $mobile) and (max-width: 767) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 2 * 30px) / 3);
 
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .page-scils .photo {
   width: 100%;
 
   border-radius: 4px;
+  @media screen and (min-width: $tablet) {
+    width: 226px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 370px;
+  }
 }
 
 .page-scils .title {
