@@ -1424,7 +1424,7 @@ img {
 
 .backdrop .form {
   position: absolute;
-  top: 50%;
+  top: 75%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1441,6 +1441,7 @@ img {
   .backdrop .form {
     width: 528px;
     height: 581px;
+    top: 50%;
   }
 }
 

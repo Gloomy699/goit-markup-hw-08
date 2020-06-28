@@ -22,7 +22,7 @@
 
 .backdrop .form {
   position: absolute;
-  top: 50%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -38,6 +38,7 @@
   @media screen and (min-width: $desktop) {
     width: 528px;
     height: 581px;
+    top: 50%;
   }
 }
 
