@@ -1,3 +1,8 @@
+.page-scils {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 .page-scils .list {
   @extend %list;
 
@@ -8,17 +13,9 @@
 
 .page-scils .item {
   position: relative;
-  @media screen and (max-width: 767px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
-  @media screen and (min-width: $tablet) {
-    width: calc((100% - 2 * 30px) / 3);
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+  width: calc((100% - 2 * 30px) / 3);
+  &:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -26,9 +23,7 @@
   width: 100%;
 
   border-radius: 4px;
-  @media screen and (min-width: $tablet) {
-    width: 226px;
-  }
+
   @media screen and (min-width: $desktop) {
     width: 370px;
   }

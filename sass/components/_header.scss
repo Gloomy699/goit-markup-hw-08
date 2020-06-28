@@ -105,6 +105,7 @@
 
     &.is-open {
       display: block;
+      z-index: 2;
     }
   }
   @media screen and (min-width: $tablet) {

@@ -173,27 +173,38 @@
             <li class="item">
               <img
                 class="photo"
-                src="./image/laptop.jpg"
+                src="./image/laptop/laptop-desk.jpg"
                 alt="изображение ноутбука"
-                width=" "
+                srcset="
+                  ./image/laptop/laptop-desk.jpg,
+                  ./image/laptop/laptop-desk2x.jpg 2x
+                "
               />
+
               <h3 class="description">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
             </li>
+
             <li class="item">
               <img
                 class="photo"
-                src="./image/phone.jpg"
+                src="./image/smartphone/smartphone.jpg"
                 alt="изображение смартфона"
-                width=" "
+                srcset="
+                  ./image/smartphone/smartphone.jpg,
+                  ./image/smartphone/smartphone2x.jpg 2x
+                "
               />
               <h3 class="description">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
             </li>
             <li class="item">
               <img
                 class="photo"
-                src="./image/monitor.jpg"
+                src="./image/desktop/desktop.jpg"
                 alt="изображение монитора"
-                width=" "
+                srcset="
+                  ./image/desktop/desktop.jpg,
+                  ./image/desktop/desktop2x.jpg 2x
+                "
               />
               <h3 class="description">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
             </li>
@@ -206,15 +217,38 @@
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="team-list list">
-            <!--Джон Смит-->
+            <!--Николай Кучеренко-->
             <li class="item">
-              <img
-                class="photo"
-                src="./image/john-smith.jpg"
-                alt="фото джона смитта"
-                width=""
-              />
-              <h3 class="name">John Smith</h3>
+              <picture>
+                <source
+                  srcset="
+                    ./image/nikolay/nikolay-mobile.jpg   1x,
+                    ./image/nikolay/nikolay-mobile2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./image/nikolay/nikolay-tabl.jpg   1x,
+                    ./image/nikolay/nikolay-tabl2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./image/nikolay/nikolay-desk.jpg   1x,
+                    ./image/nikolay/nikolay-desk2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="photo"
+                  src="./image/nikolay/nikolay-mobile.jpg"
+                  alt="фото Николай Кучеренко"
+                />
+              </picture>
+
+              <h3 class="name">Николай Кучеренко</h3>
               <p class="tech-scill">Product Designer</p>
               <ul class="soc-link list">
                 <li class="item">
@@ -263,15 +297,38 @@
                 </li>
               </ul>
             </li>
-            <!--Марта стюарт-->
+            <!--Ольга Иванова-->
             <li class="item">
-              <img
-                class="photo"
-                src="./image/marta-srewart.jpg"
-                alt="фото Марты Стюарт"
-                width=""
-              />
-              <h3 class="name">Marta Stewart</h3>
+              <picture>
+                <source
+                  srcset="
+                    ./image/olga/olga-mobile.jpg   1x,
+                    ./image/olga/olga-mobile2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./image/olga/olga-tabl.jpg   1x,
+                    ./image/olga/olga-tabl2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./image/olga/olga-desk.jpg   1x,
+                    ./image/olga/olga-desk2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="photo"
+                  src="./image/olga/olga-mobile.jpg"
+                  alt="фото Ольга Иванова"
+                />
+              </picture>
+
+              <h3 class="name">Ольга Иванова</h3>
               <p class="tech-scill">Frontend Developer</p>
               <ul class="soc-link list">
                 <li class="item">
@@ -319,15 +376,33 @@
                 </li>
               </ul>
             </li>
-            <!--Роберт Джекис-->
+            <!--Андрей Шевченко-->
             <li class="item">
-              <img
-                class="photo"
-                src="./image/robert-jakis.jpg"
-                alt="фото Роберта Дакинса"
-                width=""
-              />
-              <h3 class="name">Robert Jakis</h3>
+              <picture>
+                <source
+                  srcset="
+                    ./image/andrey/andrey-mobile.jpg   1x,
+                    ./image/andrey/andrey-mobile2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./image/andrey/andrey-tabl.jpg   1x,
+                    ./image/andrey/andrey-tabl2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)" />
+                <source
+                  srcset="
+                    ./image/andrey/andrey-desk.jpg   1x,
+                    ./image/andrey/andrey-desk2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <img
+                  class="photo"
+                  src="./image/andrey/andrey-mobile.jpg"
+                  alt="фото Андрей Шевченко"
+              /></picture>
+              <h3 class="name">Андрей Шевченко</h3>
               <p class="tech-scill">Marketing</p>
               <ul class="soc-link list">
                 <li class="item">
@@ -376,15 +451,34 @@
                 </li>
               </ul>
             </li>
-            <!--Мартин Доу-->
+            <!--Иван Николаев-->
             <li class="item">
-              <img
-                class="photo"
-                src="./image/martin-doe.jpg"
-                alt="фото Мартина Доу"
-                width=""
-              />
-              <h3 class="name">Martin Doe</h3>
+              <picture>
+                <source
+                  srcset="
+                    ./image/ivan/ivan-mobile.jpg   1x,
+                    ./image/ivan/ivan-mobile2x.jpg 2x
+                  "
+                  media="(max-width: 767px)" />
+                <source
+                  srcset="
+                    ./image/ivan/ivan-tabl.jpg   1x,
+                    ./image/ivan/ivan-tabl2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)" />
+                <source
+                  srcset="
+                    ./image/ivan/ivan-desk.jpg   1x,
+                    ./image/ivan/ivan-desk2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <img
+                  class="photo"
+                  src="./image/ivan/ivan-mobile.jpg"
+                  alt="фото Иван Николаев"
+              /></picture>
+
+              <h3 class="name">Иван Николаев</h3>
               <p class="tech-scill">UI Designer</p>
               <ul class="soc-link list">
                 <li class="item">

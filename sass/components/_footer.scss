@@ -11,7 +11,14 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desktop) {
     justify-content: space-between;
+    text-align: start;
+    flex-wrap: nowrap;
   }
 }
 
@@ -28,6 +35,9 @@
 .address-list {
   @extend %list;
   margin-bottom: 60px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0px;
+  }
 }
 .address .city-adr {
   color: $white-color;
@@ -68,6 +78,10 @@
   letter-spacing: 0.03em;
 
   color: $white-color;
+
+  @media screen and (min-width: $desktop) {
+    font-weight: 700;
+  }
 }
 .footer-page .soc-link {
   @extend %list;
@@ -96,7 +110,9 @@
 
 /* оформляет подписку */
 .footer-page .subscription {
-  // width: 570px;
+  @media screen and (min-width: $desktop) {
+    width: 570px;
+  }
 }
 .subscription .form {
   display: flex;
@@ -104,6 +120,10 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+
+  @media screen and (min-width: $desktop) {
+    align-items: flex-start;
+  }
 }
 .form input {
   width: 358px;
@@ -116,6 +136,9 @@
   padding-left: 12px;
   margin-bottom: 20px;
   color: $secondary-color;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
 }
 .subscription .join-in {
   font-weight: 400;
@@ -127,12 +150,13 @@
   text-transform: uppercase;
 
   margin-bottom: 20px;
+  @media screen and (min-width: $desktop) {
+    font-weight: 700;
+  }
 }
 .subscription .button {
   @extend %button;
   position: relative;
-  // bottom: 0;
-  // right: 0;
 
   width: 200px;
   display: flex;
@@ -145,9 +169,22 @@
   padding-left: 29px;
   padding-right: 28px;
 
+  margin-bottom: 60px;
+
   overflow: hidden;
   border: 0em;
-  margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    bottom: 0;
+    right: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    margin-bottom: 0;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 /* тут переход тоже для практики */
