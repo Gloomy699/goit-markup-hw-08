@@ -764,8 +764,13 @@ img {
 .page-team .link:hover, .page-team .link:focus {
   background-color: #2196f3;
   color: #ffffff;
-  -webkit-transform: rotateZ(360deg);
-          transform: rotateZ(360deg);
+}
+
+@media screen and (min-width: 1200px) {
+  .page-team .link:hover, .page-team .link:focus {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
 }
 
 .icon-link {
@@ -852,8 +857,13 @@ img {
 .link-company:hover, .link-company:focus {
   border-color: #2196f3;
   color: #2196f3;
-  -webkit-transform: rotateY(360deg) rotateZ(360deg) rotateY(360deg);
-          transform: rotateY(360deg) rotateZ(360deg) rotateY(360deg);
+}
+
+@media screen and (min-width: 1200px) {
+  .link-company:hover, .link-company:focus {
+    -webkit-transform: rotateY(360deg) rotateZ(360deg) rotateY(360deg);
+            transform: rotateY(360deg) rotateZ(360deg) rotateY(360deg);
+  }
 }
 
 .icon-company {

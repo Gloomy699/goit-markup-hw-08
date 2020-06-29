@@ -62,7 +62,13 @@
     border-color: $accent-color;
     color: $accent-color;
 
-    transform: rotateY(360deg) rotateZ(360deg) rotateY(360deg);
+    // transform: rotateY(360deg) rotateZ(360deg) rotateY(360deg);
+  }
+  @media screen and (min-width: $desktop) {
+    &:hover,
+    &:focus {
+      transform: rotateY(360deg) rotateZ(360deg) rotateY(360deg);
+    }
   }
 }
 

@@ -116,7 +116,12 @@
   &:focus {
     background-color: $accent-color;
     color: $white-color;
-    transform: rotateZ(360deg);
+  }
+  @media screen and (min-width: $desktop) {
+    &:hover,
+    &:focus {
+      transform: rotateZ(360deg);
+    }
   }
 }
 
