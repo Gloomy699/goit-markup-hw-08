@@ -955,6 +955,12 @@ img {
 }
 
 /* оформляет форму подписки */
+@media screen and (max-width: 767px) {
+  .social-link {
+    margin-bottom: 60px;
+  }
+}
+
 .social-link .join-in {
   text-transform: uppercase;
   display: inline-block;

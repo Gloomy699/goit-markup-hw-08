@@ -67,11 +67,11 @@
 }
 
 /* оформляет форму подписки */
-// .social-link {
-//   @media screen and (max-width: 1199px) {
-//     margin-bottom: 60px;
-//   }
-// }
+.social-link {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
 
 .social-link .join-in {
   text-transform: uppercase;
@@ -88,6 +88,7 @@
     font-weight: 700;
   }
 }
+
 .footer-page .soc-link {
   @extend %list;
   display: flex;
